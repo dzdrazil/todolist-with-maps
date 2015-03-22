@@ -1,0 +1,24 @@
+{
+  "name": "workshop-fe",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dzdrazil/workshop-fe",
+  "authors": [
+    "Dan Zdrazil <dzdrazil@gmail.com>"
+  ],
+  "description": "Frontend for the API Workshop",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "kefir": "~1.0.0",
+    "requirejs": "~2.1.16",
+    "react": "~0.13.1",
+    "immutable": "~3.6.4"
+  }
+}

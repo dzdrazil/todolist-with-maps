@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kitchen Sink</title>
+</head>
+<style type="text/css">
+#gmap-canvas { height: 500px; width: 500px; margin: 10; padding: 10; float:left;}
+input{width:300px;}
+</style>
+<body>
+
+<script src="vendor/requirejs/require.js"></script>
+<script>
+ require.config({
+    baseUrl: "./scripts",
+    paths: {
+        'react': '../vendor/react/react-with-addons',
+        'immutable': '../vendor/immutable/dist/immutable',
+        'kefir': '../vendor/kefir/dist/kefir',
+        'async': '../vendor/requirejs-plugins/src/async',
+        'google-maps': 'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBu9S975Ty040awzE50GriEp9-W5xFRJAY&callback=initialize'
+    }, //
+    shim: {
+        'google-maps': {
+            exports: 'google'
+        }
+    },
+    waitSeconds: 15
+  });
+window.initialize = function() {
+  require(['main']);
+}
+require(['google-maps']);
+</script>
+</body>
+</html>

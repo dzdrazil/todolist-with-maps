@@ -1,0 +1,26 @@
+{
+  "name": "workshop-fe",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dzdrazil/workshop-fe.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dzdrazil/workshop-fe/issues"
+  },
+  "homepage": "https://github.com/dzdrazil/workshop-fe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node make.js"
+  },
+  "dependencies": {
+    "gulp": "~3.8.11",
+    "gulp-babel": "~4.0.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-changed": "~1.2.1",
+    "del": "~1.1.1"
+  }
+}
